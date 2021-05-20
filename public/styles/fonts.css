@@ -54,6 +54,21 @@ fallback: Times, Times New Roman, serif */
   margin-bottom: 0;
 }
 
+.contact-bold-21px {
+  font-family: "PTSans-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.contact-30px {
+  font-family: "PTSerif-Regular", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+
+
 /* ABOUT TEXT */
 .about-bold {
   font-family: "PTSans-Bold", sans-serif;

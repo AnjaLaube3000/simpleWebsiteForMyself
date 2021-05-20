@@ -11,50 +11,86 @@ body {
 #main {
   display: flex;
   flex-direction: column;
-}
-/* //white top part */
-#box-top {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 40px 40px 40px;
+  align-items: center;
+  width: 100%;
+  background: #FFFFF8;
 }
 
-.contact {
+/* //white top part */
+#center-elements {
+  width: 700px;
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
+
+#box-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   color: #280069;
 }
 
-.contact p {
-  margin: 0 0;
+#box-top p {
   padding-top: 15px;
-  width: 137px;
+}
+
+#contact-top-right {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+}
+
+#contact-top-right a {
+  text-decoration: none;
+  padding-left: 7px;
+}
+
+#arrow {
+  padding-top: 2px;
+}
+
+#contact-top-right a:hover {
+  color: #FF3A66;
 }
 
 .about-serif {
   margin: 0 0;
+  padding-top: 50px;
 }
 
 /* // blue bottom part */
 #box-bottom {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 522px;
   background: #31007A;
   overflow: hidden;
   color: #FFFFF8;
   display: flex;
   flex-direction: row;
   padding-top: 40px;
+  width: 100%;
 }
 
-#contact-page2 #email {
-  padding-top: 40px;
+#contact-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  padding-top: 95px;
+  letter-spacing: 1px;
+}
+
+#email:hover {
+  color: #FF3A66;
 }
 
 #socialMedia {
   padding-top: 50px;
-}
-
-#socialMedia a{
-  text-decoration: none;
   color: #FFFFF8;
 }
 
@@ -62,14 +98,62 @@ body {
   padding-left: 30px;
 }
 
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.socialMedia a {
+  position: relative;
+  padding-top: 66px;
+}
+
+.socialMedia a img.image-main-hover {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  width: 32px;
+  padding-top: 86px;
+}
+
+.socialMedia a:hover img.image-main-hover{
+  opacity: 1;
+}
+
+.socialMedia a:hover img.image-main{
+  opacity: 0;
+}
+
+#github {
+  padding-top: 65px;
+}
+#githubIcon-pink {
+  width: 34px;
+}
+
 /* //dark blue footer */
 #footer {
   background: #1A0044;
+  height: 166px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #footer a {
   color: #FFFFF8;
   text-decoration: none;
+}
+
+#footer a:hover {
+  color: #FF3A66;
 }
 
 /* CSS for screen sizes between ipadPortrait and big smartphones*/
