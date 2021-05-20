@@ -1,0 +1,90 @@
+/*
+@font-face {
+  font-family: "Apercu-Bold";
+  src: url("/fonts/Apercu-Bold.woff2") format("woff2"),
+  url("/fonts/Apercu-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu.woff2") format("woff2"),
+  url("/fonts/Apercu.woff") format("woff");
+} */
+
+@font-face {
+  font-family: "PTSans-Bold";
+  src: url("/fonts/PTSans-Bold.woff2") format("woff2"),
+  url("/fonts/PTSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PTSans-Regular";
+  src: url("/fonts/PTSans-Regular.woff2") format("woff2"),
+  url("/fonts/PTSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PTSerif-Regular";
+  src: url("/fonts/PTSerif-Regular.woff2") format("woff2"),
+  url("/fonts/PTSerif-Regular.woff") format("woff");
+}
+
+
+
+
+/*
+fallback: Times, Times New Roman, serif */
+
+/* CONTACT */
+.contact-normal {
+  font-family: "PTSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-bold {
+  font-family: "PTSans-Bold", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ABOUT TEXT */
+.about-bold {
+  font-family: "PTSans-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 37.5px;
+  line-height: 50px;
+  color: #280069;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.about-serif {
+  font-family: "PTSerif-Regular", serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #280069;
+}
+
+/* // MENU BAR */
+.menu-bold {
+  font-family: "PTSans-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.form-labels {
+  font-family: "PTSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 0;
+}

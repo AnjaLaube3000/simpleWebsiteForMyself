@@ -1,0 +1,259 @@
+body {
+  background-color: #FFFFF8;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 40px 0px 40px;
+}
+
+#main {
+  position: relative;
+  left: 0;
+}
+
+.flyout-menu-active #main {
+  left: 100%;
+}
+
+.flyout-menu-inactive #main {
+  transition: left 1s;
+}
+
+.contact {
+  padding-left: 50px;
+  color: #280069;
+  position: fixed;
+}
+
+.contact p {
+  margin: 0 0;
+  padding-top: 15px;
+  width: 137px;
+}
+
+.about {
+  padding-left: 350px;
+  padding-bottom: 40px;
+}
+
+.about-serif {
+  margin: 0 0;
+}
+
+/* // Flyout effect */
+#menu {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  text-align: center;
+  background-color: #280069;
+  line-height: 40px;
+  width: 40px;
+  text-decoration: none;
+  color: white;
+  z-index: 200;
+  transition: left 1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#menu:hover {
+  background: #FF3A66;
+}
+
+#menu span {
+  margin-top: 17px;
+}
+
+#menu-flyout {
+  position: fixed;
+  transition: width 1s;
+  background: #31007A;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  z-index: 100;
+  margin-right: 40px;
+  color: #FFFFF8;
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+#menu-flyout.active {
+  width: 100%;
+}
+
+#menu-flyout.active #contact {
+  color: #FFFFF8;
+}
+
+#menu.active {
+  left: 100%;
+  margin-left: -40px;
+}
+
+/* Changes Word in Menu: CONTACT to MENU */
+#menu .visible {
+  display: block;
+}
+
+#menu .invisible {
+  display: none;
+}
+
+#menu.active .visible {
+  display: none;
+}
+
+#menu.active .invisible {
+  display: block;
+  background: #FFFFF8;
+  color:  #31007A;
+}
+
+#rotateChevron-white {
+  transform: rotate(90deg);
+}
+
+#rotateChevron-blue {
+  transform: rotate(-90deg);
+}
+
+
+/* FLYOUT PAGE */
+
+/* Left Element */
+#contact-page2 {
+  padding-left: 89px;
+  width: 185px;
+}
+
+#contact-page2 p {
+  margin: 0 0;
+  padding-top: 15px;
+}
+
+/* #location {
+  margin-bottom: 0;
+} */
+
+#contact-page2 #email {
+  padding-top: 40px;
+}
+
+#socialMedia {
+  padding-top: 50px;
+}
+
+#socialMedia a{
+  text-decoration: none;
+  color: #FFFFF8;
+}
+
+#githubIcon {
+  padding-left: 30px;
+}
+
+/* Center Element */
+#form {
+  width: 408px;
+  padding-left: 169px;
+}
+
+#form ul {
+  padding-left: 0;
+}
+
+#form ul p {
+  margin-bottom: 0px;
+}
+
+#form li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#form label {
+  padding-top: 15px;
+}
+
+#button {
+  border: 1px solid #FFFFF8;
+  background: none;
+  text-align: center;
+  color: #FFFFF8;
+  border-radius: 19px;
+  margin-top: 35px;
+  width: 89px;
+  height: 39px;
+  align-self: end;
+}
+
+#button:hover {
+  background: #FF3A66;
+  border-color: #FF3A66;
+}
+
+.disabled {
+ color: yellow;
+}
+
+#form input, #form textarea {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-color: #FFFFF8;
+  background: none;
+  color: #D4CCDB;
+  padding-left: 11px;
+  margin-top: 5px;
+  font-size: 16px;
+  resize: none;
+}
+
+#form textarea {
+  padding-top: 9px;
+  height: 155px;
+  font-size: 17px;
+}
+
+.slimInput {
+  height: 39px;
+}
+
+
+/* Right Element */
+/* #rightElement {
+  padding-left: 69px;
+} */
+
+
+
+/* CSS for screen sizes between ipadPortrait and big smartphones*/
+@media only screen and (max-width: 1024px) and (orientation: landscape){
+/* // fix contact-page (unbeweglich) */
+/* // menu nur so hoch wie screenheight */
+/* // text scrallbar */
+
+}
+
+
+/* CSS for screen sizes smaller than big smartphones*/
+/* @media only screen and (max-width: 768px){
+
+} */
