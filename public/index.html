@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anja Laube</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/fonts.css">
@@ -37,16 +38,14 @@
       </div>
     </div>
 
-
-
     <div id="box-bottom">
       <div id="contact-bottom">
-        <p class='contact-30px'>Contact Anja </p>
-        <div class="address contact-normal">
-          <p class="contact-bold-21px" id="email">contact@anjalaube.com</p>
+        <p class='contact-bold title'>Contact Anja </p>
+        <div>
+          <p class="contact-normal" id="email">contact@anjalaube.com</p>
         </div>
         <div class="socialMedia">
-          <a id='github' href="https://github.com/AnjaLaube3000">
+          <a href="https://github.com/AnjaLaube3000">
             <img class='image-main' src="images/GitHub.svg" alt="Github Icon">
             <img class='image-main-hover' id="githubIcon-pink"src="images/GitHub-pink.svg" alt="Github Icon">
           </a>
@@ -57,9 +56,42 @@
           </a>
         </div>
       </div>
+      <div id="form" class="contact-normal">
+        <form id="contact-form">
+          <p class='contact-bold title'>Send Anja a message</p>
+          <ul>
+            <li>
+              <input type="hidden" name="contact_number">
+            </li>
+            <li>
+              <label class='form-labels' for="name">Name (required)</label>
+              <input type="text" class="slimInput" id="name" name="user_name" placeholder="What's your name?" required>
+            </li>
+            <li>
+              <label class='form-labels' for="mail">E-mail (required)</label>
+              <input type="email" class="slimInput" id="mail" name="user_email" placeholder="Insert your email" required>
+            </li>
+            <li>
+              <label class='form-labels' for="phoneNumber">Phone Number</label>
+              <input type="phoneNumber" class="slimInput" id="phoneNumber" name="user_phoneNumber"
+                placeholder="Insert your phone number">
+            </li>
+            <li>
+              <label class='form-labels' for="msg">Message (required)</label>
+              <textarea name="message" placeholder="Write your message" class="slimInput, contact-normal" required></textarea>
+            </li>
+            <li>
+              <button id='button' class='contact-bold' type="submit" value="Send">Submit</button>
+            </li>
+          </ul>
+        </form>
+        <span id='contact-form-loading-screen'>Form will be submitted shortly.</span>
+        <span id='contact-form-success-screen'>Yeah! Form was submitted successfully.</span>
+        <span id='contact-form-error-screen'>There was an error. Please try again.</span>
+      </div>
     </div>
     <div id='footer' class='contact-normal'>
-          <a href="">Imprint</a>
+          <a href="impressum.html">Imprint</a>
     </div>
   </div>
   <script src="/scripts/bundle.js"></script>
