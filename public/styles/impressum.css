@@ -8,11 +8,13 @@ body {
 #container {
   color: #280069;
   padding: 108px 108px;
-  width: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-
+#container-top {
+  width: 700px;
+}
 
 #title {
   display: flex;
@@ -20,9 +22,14 @@ body {
   justify-content: space-between;
 }
 
+#title h1 {
+  margin-top: 0px;
+  line-height: 37.5px;
+}
+
 #title a {
-  margin-top: 25.125px;
   text-decoration: none;
+  padding-top: 5px;
 }
 
 #title a img{
@@ -32,6 +39,10 @@ body {
 
 #title a:hover {
   color: #FF3A66;
+}
+
+.paragraphs h2 {
+  line-height: 40px;
 }
 
 #footer {
@@ -50,4 +61,30 @@ body {
 
 #footer a:hover {
   color: #FF3A66;
+}
+
+
+@media only screen and (max-width: 1024px) and (orientation: landscape){
+  #container {
+    width: auto;
+    padding-top: 35px;
+    padding-right: 35px;
+    padding-bottom: 55px;
+    padding-left: 35px;
+  }
+
+
+}
+
+
+/* CSS for screen sizes smaller than big smartphones*/
+@media only screen and (max-width: 768px){
+  #container {
+    width: auto;
+    padding-top: 35px;
+    padding-right: 13.5px;
+    padding-bottom: 50px;
+    padding-left: 13.5px;
+  }
+
 }
