@@ -8,14 +8,31 @@ body {
 #container {
   color: #280069;
   padding: 108px 108px;
-  width: 700px;
+  width: auto;
   display: flex;
   flex-direction: column;
 }
 
-/* #container-top {
 
-} */
+#title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#title a {
+  margin-top: 25.125px;
+  text-decoration: none;
+}
+
+#title a img{
+  padding-right: 10px;
+  padding-top: 2px;
+}
+
+#title a:hover {
+  color: #FF3A66;
+}
 
 #footer {
   background: #1A0044;
