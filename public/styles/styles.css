@@ -72,6 +72,13 @@ body {
   width: 100%;
 }
 
+#width {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #contact-bottom {
   display: flex;
   flex-direction: column;
@@ -175,6 +182,7 @@ body {
 #button:hover {
   background: #FF3A66;
   border-color: #FF3A66;
+  color: #280069;
 }
 
 .disabled {
@@ -259,6 +267,28 @@ body {
     padding-left: 35px;
   }
 
+  #box-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #width {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .socialMedia a {
+    position: relative;
+    padding-top: 0px;
+  }
+
+  #form {
+    padding-left: 0px;
+    padding-top: 79px;
+  }
 }
 
 
@@ -284,6 +314,103 @@ body {
 
   #contact-top-right a{
     text-align: right;
+  }
+
+  #box-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #width {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #email {
+    padding-bottom: 25px;
+  }
+
+  .socialMedia a {
+    position: relative;
+    padding-top: 0px;
+  }
+
+  .socialMedia a img.image-main-hover {
+    padding-top: 20px;
+  }
+
+  #form {
+    padding-left: 0px;
+    padding-top: 79px;
+  }
+
+}
+
+@media only screen and (max-width: 420px){
+  #center-elements {
+    width: auto;
+    padding-top: 13.5px;
+    padding-right: 13.5px;
+    padding-bottom: 64px;
+    padding-left: 13.5px;
+  }
+
+  .about .about-bold {
+    font-size: 21px;
+    line-height: 31px;
+  }
+
+  .about .about-serif {
+    font-size: 21px;
+    line-height: 31px;
+  }
+
+  #contact-top-right a{
+    text-align: right;
+  }
+
+  /* #center-elements-bottom{
+    width: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  } */
+
+  #box-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  #email {
+    padding-bottom: 25px;
+  }
+
+  .socialMedia a {
+    position: relative;
+    padding-top: 0px;
+  }
+
+  .socialMedia a img.image-main-hover {
+    padding-top: 20px;
+  }
+
+  #form {
+    padding-left: 0px;
+    padding-top: 79px;
+    width: auto;
+  }
+
+  #form input, #form textarea {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    padding-left: 6px;
   }
 }
 
