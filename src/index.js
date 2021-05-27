@@ -8,14 +8,19 @@ window.onload = () => {
   const loadingScreen = document.getElementById('contact-form-loading-screen');
   const successScreen = document.getElementById('contact-form-success-screen');
   const errorScreen = document.getElementById('contact-form-error-screen');
-
+  const inputs = document.querySelectorAll('input,textarea')
+  const button = document.querySelector('button')
 
   function setFormStatus(isLoading, hasError){
     loadingScreen.classList.remove('active')
     successScreen.classList.remove('active');
     errorScreen.classList.remove('active');
+    // inputs.classList.remove('disabled')
+    // button.classList.remove('disabled')
     if(isLoading) {
       loadingScreen.classList.add('active')
+      inputs.classList.add('disabled')
+      button.classList.add('disabled')
       console.log('loading')
     } else if( hasError ) {
       errorScreen.classList.add('active');
@@ -35,7 +40,6 @@ window.onload = () => {
     emailjs.sendForm('contact_service', 'contact_form', this)
       .then(function () {
         setFormStatus(false)
-        const inputs = document.querySelectorAll('input,textarea')
         inputs.forEach((input) => {
           input.value = ''
         })
