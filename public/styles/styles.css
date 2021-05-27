@@ -216,16 +216,16 @@ body {
 #contact-form-loading-screen {
   display: none;
 }
-#contact-form-loading-screen .active{
+#contact-form-loading-screen.active {
   color: yellow;
   display: block;
 }
 
-#contact-form-sucess-screen {
+#contact-form-success-screen {
   display: none;
 }
 
-#contact-form-sucess-screen .active{
+#contact-form-success-screen.active {
   display: block;
 }
 
@@ -233,7 +233,7 @@ body {
   display: none;
 }
 
-#contact-form-error-screen .active{
+#contact-form-error-screen.active {
   display: block;
   color: #FF3A66;
 }
@@ -413,4 +413,3 @@ body {
     padding-left: 6px;
   }
 }
-

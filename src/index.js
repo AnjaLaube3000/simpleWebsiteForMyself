@@ -4,30 +4,6 @@
 })();
 
 window.onload = () => {
-  // const menu = document.getElementById('menu')
-  // const animationTime = 1100;
-
-  // menu.addEventListener( 'click', (e) => {
-  //   e.preventDefault()
-  //   const flyOutMenu = document.querySelector("#menu-flyout")
-  //   flyOutMenu.classList.toggle('active')
-  //   menu.classList.toggle('active')
-
-  //   if( !menu.classList.contains('active') ) {
-  //     document.body.classList.add('flyout-menu-inactive')
-  //     document.body.classList.remove('flyout-menu-active')
-  //     setTimeout( () => {
-  //       document.body.classList.remove('flyout-menu-inactive');
-  //     }, animationTime );
-  //     window.location.hash = '';
-  //   } else {
-  //     setTimeout( () => {
-  //       document.body.classList.add('flyout-menu-active')
-  //     }, animationTime );
-  //     window.location.hash = 'menuopen';
-  //   }
-
-  // })
   const contactForm = document.getElementById('contact-form');
   const loadingScreen = document.getElementById('contact-form-loading-screen');
   const successScreen = document.getElementById('contact-form-success-screen');
@@ -105,10 +81,4 @@ function getTime() {
   return spanForTime
 }
 
-setInterval(getTime(), 5000)
-
-// only for development
-// if( window.location.hash == '#menuopen' ) {
-//   menu.dispatchEvent( new Event('click') )
-// }
-
+setInterval(getTime, 1000)
