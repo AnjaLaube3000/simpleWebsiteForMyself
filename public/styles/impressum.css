@@ -1,6 +1,8 @@
+
 body {
   background-color: #FFFFF8;
-  margin: 0 0 0 0;
+  padding: 0;
+  margin: 0;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
@@ -13,6 +15,7 @@ body {
   align-items: center;
 }
 #container-top {
+  height: 100%;
   width: 700px;
 }
 
@@ -52,6 +55,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: auto;
+
 }
 
 #footer a {
@@ -66,13 +71,16 @@ body {
 
 @media only screen and (max-width: 1024px) and (orientation: landscape){
   #container {
-    width: auto;
     padding-top: 35px;
     padding-right: 35px;
     padding-bottom: 55px;
     padding-left: 35px;
   }
 
+  #container-top{
+    width: 100%;
+    height: auto;
+  }
 
 }
 
@@ -80,11 +88,14 @@ body {
 /* CSS for screen sizes smaller than big smartphones*/
 @media only screen and (max-width: 768px){
   #container {
-    width: auto;
     padding-top: 35px;
     padding-right: 13.5px;
     padding-bottom: 50px;
     padding-left: 13.5px;
   }
 
+  #container-top{
+    width: 100%;
+    height: auto;
+  }
 }

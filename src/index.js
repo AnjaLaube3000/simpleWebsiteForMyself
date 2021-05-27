@@ -4,7 +4,6 @@
 })();
 
 window.onload = () => {
-
   const contactForm = document.getElementById('contact-form');
   const loadingScreen = document.getElementById('contact-form-loading-screen');
   const successScreen = document.getElementById('contact-form-success-screen');
@@ -17,10 +16,12 @@ window.onload = () => {
     errorScreen.classList.remove('active');
     if(isLoading) {
       loadingScreen.classList.add('active')
+      console.log('loading')
     } else if( hasError ) {
       errorScreen.classList.add('active');
     } else {
       successScreen.classList.add('active');
+      console.log('success')
     }
   }
    contactForm.addEventListener('submit', function (event) {
@@ -72,7 +73,6 @@ function getTime() {
     hour = "12"
   }
 
-
   const time = 'Berlin, CET ' + hour + ':' + minutes + ' ' + suffix
   const spanForTime = document.querySelectorAll('.clock')
   spanForTime.forEach((span) => {
@@ -80,5 +80,5 @@ function getTime() {
   })
   return spanForTime
 }
+
 setInterval(getTime, 1000)
-// console.log(setInterval(getTime(), 10000))
