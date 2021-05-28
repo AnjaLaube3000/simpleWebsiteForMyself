@@ -1,6 +1,15 @@
+/* Colors */
+:root {
+  --darkblue: #280069;
+  --footerblue: #1A0044;
+  --pink: #FF3A66;
+  --offwhite:  #FFFFF8;
+  --mustard: #F4C64D;
+  --formgrey: #D4CCDB;
+}
 
 body {
-  background-color: #FFFFF8;
+  background-color: var(--offwhite);
   padding: 0;
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
@@ -8,7 +17,7 @@ body {
 }
 
 #container {
-  color: #280069;
+  color: var(--darkblue);
   margin: 108px 108px;
   display: flex;
   flex-direction: column;
@@ -42,7 +51,7 @@ body {
 }
 
 #title a:hover {
-  color: #FF3A66;
+  color: var(--mustard);
 }
 
 .paragraphs h2 {
@@ -50,7 +59,7 @@ body {
 }
 
 #footer {
-  background: #1A0044;
+  background: var(--footerblue);
   height: 105px;
   display: flex;
   justify-content: center;
@@ -61,12 +70,12 @@ body {
 }
 
 #footer a {
-  color: #FFFFF8;
+  color: var(--offwhite);
   text-decoration: none;
 }
 
 #footer a:hover {
-  color: #FF3A66;
+  color: var(--mustard);
 }
 
 

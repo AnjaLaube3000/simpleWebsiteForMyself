@@ -1,5 +1,15 @@
+/* Colors */
+:root {
+  --darkblue: #280069;
+  --footerblue: #1A0044;
+  --pink: #FF3A66;
+  --offwhite:  #FFFFF8;
+  --mustard: #F4C64D;
+  --formgrey: #D4CCDB;
+}
+
 body {
-  background-color: #FFFFF8;
+  background-color: var(--offwhite);
   display: flex;
   flex-direction: row;
   margin: 0 0 0 0;
@@ -12,7 +22,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: #FFFFF8;
+  background: var(--offwhite);
 }
 
 /* //white top part */
@@ -26,7 +36,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: #280069;
+  color: var(--darkblue);
 }
 
 #box-top p {
@@ -49,7 +59,7 @@ body {
 }
 
 #contact-top-right a:hover {
-  color: #FF3A66;
+  color: var(--mustard);
 }
 
 .about-serif {
@@ -62,9 +72,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #31007A;
+  background: var(--darkblue);
   overflow: hidden;
-  color: #FFFFF8;
+  color: var(--offwhite);
   display: flex;
   flex-direction: row;
   padding-top: 108px;
@@ -88,15 +98,17 @@ body {
   letter-spacing: 1px;
   padding-top: 15px;
   padding-bottom: 30px;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
 }
 
 #email:hover {
-  color: #FF3A66;
+  color: var(--mustard);
 }
 
 #socialMedia {
   padding-top: 50px;
-  color: #FFFFF8;
+  color: var(--offwhite);
 }
 
 .socialMedia {
@@ -149,6 +161,12 @@ body {
   position: relative;
 }
 
+#form-display {
+  display: flex;
+  flex-direction: column;
+  ju
+}
+
 #form ul {
   padding-left: 0;
   margin-top: 0;
@@ -169,10 +187,10 @@ body {
 }
 
 #button {
-  border: 1px solid #FFFFF8;
+  border: 1px solid var(--offwhite);
   background: none;
   text-align: center;
-  color: #FFFFF8;
+  color: var(--offwhite);
   border-radius: 19px;
   margin-top: 35px;
   width: 89px;
@@ -181,9 +199,9 @@ body {
 }
 
 #button:hover {
-  background: #FF3A66;
-  border-color: #FF3A66;
-  color: #280069;
+  background: var(--mustard);
+  border-color: var(--mustard);
+  color: var(--darkblue);
 }
 
 .disabled {
@@ -195,9 +213,9 @@ body {
   border-top-style: solid;
   border-right-width: 1px;
   border-right-style: solid;
-  border-color: #FFFFF8;
+  border-color: var(--offwhite);
   background: none;
-  color: #D4CCDB;
+  color: var(--formgrey);
   padding-left: 11px;
   margin-top: 5px;
   font-size: 16px;
@@ -218,15 +236,15 @@ body {
 #contact-form-loading-screen {
   display: none;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 4px;
+  left: 170px;
   width: 75%;
   height: 96%;
   margin: 29px 1px 0 -22px;
-  background: #280069;
-  filter: contrast(20);
+  background: var(--darkblue);
+  /* filter: contrast(20); */
   opacity: 0.7;
-  border-radius: 3%;
+  filter: blur(4px);
 }
 
 #contact-form-loading-screen .dot {
@@ -235,8 +253,8 @@ body {
   height: 16px;
   top: 50%;
   left: 50%;
-  filter: blur(4px);
-  background: #FFFFF8;
+  /* filter: blur(4px); */
+  background: var(--offwhite);
   border-radius: 50%;
   transform: translateX(0);
   animation: dot 2.8s infinite;
@@ -247,17 +265,17 @@ body {
   margin-top: 12px;
   margin-left: 31px;
   animation: dots 2.8s infinite;
-  position: relative;
+  /* position: relative; */
 }
 
-#contact-form-loading-screen .span {
+#contact-form-loading-screen span {
   display: block;
   float: left;
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  filter: blur(4px);
-  background: #280069;
+  /* filter: blur(4px); */
+  background: var(--offwhite);
   border-radius: 50%;
 }
 
@@ -288,12 +306,12 @@ body {
 
 #contact-form-error-screen.active {
   display: block;
-  color: #FF3A66;
+  color: var(--pink);
 }
 
 /* //dark blue footer */
 #footer {
-  background: #1A0044;
+  background: var(--footerblue);
   height: 105px;
   display: flex;
   justify-content: center;
@@ -302,12 +320,12 @@ body {
 }
 
 #footer a {
-  color: #FFFFF8;
+  color: var(--offwhite);
   text-decoration: none;
 }
 
 #footer a:hover {
-  color: #FF3A66;
+  color: var(--mustard);
 }
 
 /* CSS for screen sizes between ipadPortrait and big smartphones*/
@@ -355,16 +373,6 @@ body {
     padding-left: 13.5px;
   }
 
-  .about .about-bold {
-    font-size: 21px;
-    line-height: 31px;
-  }
-
-  .about .about-serif {
-    font-size: 21px;
-    line-height: 31px;
-  }
-
   #contact-top-right a{
     text-align: right;
   }
@@ -401,15 +409,8 @@ body {
 
 }
 
-@media only screen and (max-width: 420px){
-  #center-elements {
-    width: auto;
-    padding-top: 13.5px;
-    padding-right: 13.5px;
-    padding-bottom: 64px;
-    padding-left: 13.5px;
-  }
 
+@media only screen and (max-width: 375px){
   .about .about-bold {
     font-size: 21px;
     line-height: 31px;
@@ -418,6 +419,17 @@ body {
   .about .about-serif {
     font-size: 21px;
     line-height: 31px;
+  }
+}
+
+
+@media only screen and (max-width: 420px){
+  #center-elements {
+    width: auto;
+    padding-top: 13.5px;
+    padding-right: 13.5px;
+    padding-bottom: 64px;
+    padding-left: 13.5px;
   }
 
   #contact-top-right a{

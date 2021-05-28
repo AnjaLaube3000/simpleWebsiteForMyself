@@ -31,8 +31,7 @@
       </div>
 
       <div class="about">
-        <p class="about-serif">Anja Laube eine wunderbare Heiterkeit hat meine ganze Seele eingenommen, gleich den süßen <a href="" class="about-bold">Le Wagon</a> die ich mit ganzem Herzen genieße. Ich bin allein und freue mich meines Lebens in dieser Gegend, die für solche Seelen geschaffen ist wie            die meine. Ich bin so glücklich, meine Beste Janina, so ganz in dem Gefühle von ruhigem Dasein versunken, daß meine Kunst
-          darunter leidet. Ich könnte jetzt nicht zeichnen, nicht einen Strich, und bin nie ein größerer Maler gewesen als in
+        <p class="about-serif">Anja Laube eine wunderbare Heiterkeit hat meine ganze Seele eingenommen, gleich den süßen <a href="" class="about-bold">Le Wagon</a> die ich mit ganzem Herzen genieße. Ich bin allein und freue mich meines Lebens in dieser darunter leidet. Ich könnte jetzt nicht zeichnen, nicht einen Strich, und bin nie ein größerer Maler gewesen als in
           diesen Augenblicken. <a href="" class="about-bold">Contact Anja</a> or visit <a href="https://github.com/AnjaLaube3000" class="about-bold">my GitHub profile.</a>
         </p>
       </div>
@@ -59,33 +58,35 @@
             </div>
           </div>
           <div id="form" class="contact-normal">
-            <form id="contact-form">
-              <p class='contact-bold title'>Send Anja a message</p>
-              <ul>
-                <li>
-                  <input type="hidden" name="contact_number">
-                </li>
-                <li>
-                  <label class='form-labels' for="name">Name (required)</label>
-                  <input type="text" class="slimInput" id="name" name="user_name" placeholder="What's your name?" required>
-                </li>
-                <li>
-                  <label class='form-labels' for="mail">E-mail (required)</label>
-                  <input type="email" class="slimInput" id="mail" name="user_email" placeholder="Insert your email" required>
-                </li>
-                <li>
-                  <label class='form-labels' for="phoneNumber">Phone Number</label>
-                  <input type="phoneNumber" class="slimInput" id="phoneNumber" name="user_phoneNumber"
-                    placeholder="Insert your phone number">
-                </li>
-                <li>
-                  <label class='form-labels' for="msg">Message (required)</label>
-                  <textarea name="message" placeholder="Write your message" class="slimInput, contact-normal" required></textarea>
-                </li>
-                <li>
-                  <button id='button' class='contact-bold' type="submit" value="Send">Submit</button>
-                </li>
-              </ul>
+            <form>
+              <div id="form-display" >
+                <p class='contact-bold title'>Send Anja a message</p>
+                <ul>
+                  <li>
+                    <input type="hidden" name="contact_number">
+                  </li>
+                  <li>
+                    <label class='form-labels' for="name">Name (required)</label>
+                    <input type="text" class="slimInput" id="name" name="user_name" placeholder="What's your name?" required>
+                  </li>
+                  <li>
+                    <label class='form-labels' for="mail">E-mail (required)</label>
+                    <input type="email" class="slimInput" id="mail" name="user_email" placeholder="Insert your email" required>
+                  </li>
+                  <li>
+                    <label class='form-labels' for="phoneNumber">Phone Number</label>
+                    <input type="phoneNumber" class="slimInput" id="phoneNumber" name="user_phoneNumber"
+                      placeholder="Insert your phone number">
+                  </li>
+                  <li>
+                    <label class='form-labels' for="msg">Message (required)</label>
+                    <textarea name="message" placeholder="Write your message" class="slimInput, contact-normal" required></textarea>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <button id='button' class='contact-bold' type="submit" value="Send">Submit</button>
+              </div>
             </form>
             <!-- Loading Screen -->
             <div id='contact-form-loading-screen'>
