@@ -54,6 +54,9 @@ body {
   color: var(--mustard);
 }
 
+.paragraphs {
+  margin-top: 50px;
+}
 .paragraphs h2 {
   line-height: 40px;
 }
