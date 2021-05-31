@@ -38,6 +38,7 @@ body {
 #title h1 {
   margin-top: 0px;
   line-height: 37.5px;
+  text-decoration: none;
 }
 
 #title a {
