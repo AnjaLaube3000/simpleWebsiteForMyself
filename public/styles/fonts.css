@@ -76,8 +76,9 @@ fallback: Times, Times New Roman, serif */
   font-size: 37.5px;
   line-height: 50px;
   color: #280069;
-  text-transform: uppercase;
   text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.13em;
 }
 
 .about-serif {

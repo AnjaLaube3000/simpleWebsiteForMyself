@@ -1,6 +1,15 @@
+/* Colors */
+:root {
+  --darkblue: #280069;
+  --footerblue: #1A0044;
+  --pink: #FF3A66;
+  --offwhite:  #FFFFF8;
+  --mustard: #F4C64D;
+  --formgrey: #D4CCDB;
+}
 
 body {
-  background-color: #FFFFF8;
+  background-color: var(--offwhite);
   padding: 0;
   margin: 0;
   -moz-osx-font-smoothing: grayscale;
@@ -8,12 +17,13 @@ body {
 }
 
 #container {
-  color: #280069;
-  padding: 108px 108px;
+  color: var(--darkblue);
+  margin: 108px 108px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #container-top {
   height: 100%;
   width: 700px;
@@ -41,61 +51,69 @@ body {
 }
 
 #title a:hover {
-  color: #FF3A66;
+  color: var(--mustard);
 }
 
+.paragraphs {
+  margin-top: 50px;
+}
 .paragraphs h2 {
   line-height: 40px;
 }
 
 #footer {
-  background: #1A0044;
+  background: var(--footerblue);
   height: 105px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: auto;
-
+  position: fixed;
+  bottom: 0;
 }
 
 #footer a {
-  color: #FFFFF8;
+  color: var(--offwhite);
   text-decoration: none;
 }
 
 #footer a:hover {
-  color: #FF3A66;
+  color: var(--mustard);
 }
 
 
 @media only screen and (max-width: 1024px) and (orientation: landscape){
   #container {
-    padding-top: 35px;
-    padding-right: 35px;
-    padding-bottom: 55px;
-    padding-left: 35px;
+    margin-top: 35px;
+    margin-right: 35px;
+    margin-bottom: 55px;
+    margin-left: 35px;
   }
 
   #container-top{
     width: 100%;
     height: auto;
   }
-
 }
 
 
 /* CSS for screen sizes smaller than big smartphones*/
 @media only screen and (max-width: 768px){
   #container {
-    padding-top: 35px;
-    padding-right: 13.5px;
-    padding-bottom: 50px;
-    padding-left: 13.5px;
+    margin-top: 35px;
+    margin-right: 13.5px;
+    margin-bottom: 50px;
+    margin-left: 13.5px;
   }
 
   #container-top{
     width: 100%;
     height: auto;
+  }
+}
+
+@media only screen and (max-height: 500px){
+  #footer {
+    position: relative;
   }
 }
