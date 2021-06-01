@@ -92,6 +92,7 @@ body {
 .project img {
   padding-bottom: 15px;
   height: 220px;
+  width: 330px;
 }
 
 .project a {
@@ -131,7 +132,7 @@ body {
 }
 
 #width {
-  width: 700px;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -377,9 +378,9 @@ body {
 }
 
 /* CSS for screen sizes between ipadPortrait and big smartphones*/
-@media only screen and (max-width: 1024px) and (orientation: landscape){
+@media only screen and (max-width: 1024px){
   #center-elements {
-    width: 700px;
+    width: auto;
     padding-top: 35px;
     padding-right: 35px;
     padding-bottom: 100px;
