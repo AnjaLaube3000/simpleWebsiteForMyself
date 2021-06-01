@@ -67,7 +67,55 @@ body {
   padding-top: 50px;
 }
 
-/* // blue bottom part */
+
+/* //projects section*/
+#project-section {
+  color: var(--darkblue);
+  padding-top: 80px
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  width: 330px;
+  padding-right: 13px;
+}
+
+.project img {
+  padding-bottom: 15px;
+  height: 220px;
+}
+
+.project a {
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+.project a:visited{
+  color: var(--darkblue);
+}
+
+
+.project h3 {
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  padding-bottom: 10px;
+}
+
+.description {
+  padding-top: 6px;
+}
+
+
+/* //contact section */
 #box-bottom {
   display: flex;
   flex-direction: row;
@@ -88,6 +136,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
 
 #contact-bottom {
   display: flex;
@@ -146,7 +195,7 @@ body {
 #github {
   padding-top: 66px;
 }
-#githubIcon-pink {
+#githubIcon-mustard {
   width: 34px;
 }
 
@@ -330,7 +379,7 @@ body {
 /* CSS for screen sizes between ipadPortrait and big smartphones*/
 @media only screen and (max-width: 1024px) and (orientation: landscape){
   #center-elements {
-    width: auto;
+    width: 700px;
     padding-top: 35px;
     padding-right: 35px;
     padding-bottom: 100px;
