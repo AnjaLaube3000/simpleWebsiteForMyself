@@ -54,6 +54,10 @@ body {
   padding-left: 7px;
 }
 
+#contact-top-right a:visited {
+  color: var(--darkblue);
+}
+
 #arrow {
   padding-top: 2px;
 }
@@ -65,6 +69,14 @@ body {
 .about-serif {
   margin: 0 0;
   padding-top: 50px;
+}
+
+.about-serif a:hover {
+  color: var(--mustard);
+}
+
+.about-serif a:visited {
+  color: var(--darkblue);
 }
 
 
@@ -111,13 +123,22 @@ body {
   padding-bottom: 10px;
 }
 
+.project h3:hover {
+  color: var(--mustard);
+}
+
+.project h3:visited {
+  color: var(--darkblue);
+}
+
+
 .description {
   padding-top: 6px;
 }
 
 
 /* //contact section */
-#box-bottom {
+#contact-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
