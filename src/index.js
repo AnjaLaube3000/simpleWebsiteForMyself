@@ -15,12 +15,8 @@ window.onload = () => {
     loadingScreen.classList.remove('active')
     successScreen.classList.remove('active');
     errorScreen.classList.remove('active');
-    // inputs.classList.remove('disabled')
-    // button.classList.remove('disabled')
     if(isLoading) {
       loadingScreen.classList.add('active')
-      // inputs.classList.add('disabled')
-      // button.classList.add('disabled')
       console.log('loading')
     } else if( hasError ) {
       errorScreen.classList.add('active');
