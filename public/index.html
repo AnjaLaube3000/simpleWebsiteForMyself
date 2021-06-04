@@ -9,9 +9,10 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 </head>
 <body>
-  <div id="main">
-    <div id='center-elements'>
-      <div id="box-top">
+  <div id='main'>
+    <div id='white-box'>
+      <div id='width-white'>
+        <div id="box-top">
         <div id='contact-top-left 'class="contact-left">
           <p class="contact-bold">
             Anja Laube
@@ -28,21 +29,21 @@
           <a id='arrow' href='#contact-box'>
             <img src="images/arrow-down.svg" alt="Arrow down"></a>
         </div>
-      </div>
+        </div>
 
-      <div id="about">
-        <p class="about-serif">Anja Laube is a communication designer and fashion designer. After working in different positions in Germany and abroad she decided to add a strong new component to her skillset. In 2019 she joined the Web Development bootcamp at <a href="https://www.lewagon.com/web-development-course/full-time" class="about-bold">Le Wagon Berlin</a>. As a handy person Anja enjoys
-        realizing ideas. Now she a can do so offline with fabrics and digital with code. With her background in design frontend development is a natural fit.
-        <br>
-        Don't hesitate to <a href="#contact-box" class="about-bold">contact her</a> or visit her <a href="https://github.com/AnjaLaube3000" class="about-bold">GitHub</a> or <a href="https://www.linkedin.com/in/anja-laube/" class="about-bold">LinkedIn</a> profile.
-        </p>
-      </div>
+        <div id='about'>
+          <p class="about-serif">Anja Laube is a communication designer and fashion designer. After working in different positions in Germany and abroad she decided to add a strong new component to her skillset. In 2019 she joined the Web Development bootcamp at <a href="https://www.lewagon.com/web-development-course/full-time" class="about-bold">Le Wagon Berlin</a>. As a handy person Anja enjoys
+          realizing ideas. Now she a can do so offline with fabrics and digital with code. With her background in design frontend development is a natural fit.
+          <br>
+          Don't hesitate to <a href="#contact-box" class="about-bold">contact her</a> or visit her <a href="https://github.com/AnjaLaube3000" class="about-bold">GitHub</a> or <a href="https://www.linkedin.com/in/anja-laube/" class="about-bold">LinkedIn</a> profile.
+          </p>
+        </div>
 
-      <div id="project-section">
-        <h2 class="contact-bold">Selected Work</h2>
-        <div id="projects">
-          <div class="project">
-            <a href="https://priceless-kare-755c45.netlify.app" target="_blank"/>
+        <div id='project-section'>
+        <h2 class='contact-bold'>Selected Work</h2>
+        <div id='projects'>
+          <div class='project'>
+            <a href='https://priceless-kare-755c45.netlify.app' target='_blank'/>
               <img src="images/kowatsch-konstruktion.svg" alt="Image of website for Kowatsch Konstruktion">
               <h3 class='contact-normal'>Kowatsch Konstruktion</h3>
               <p class='contact-normal'>Digital business card for Georg Kowatsch, who works as 'Technischer Zeichner' and 'Zimmerer Meister'
@@ -51,85 +52,84 @@
             </a>
           </div>
         </div>
+        </div>
       </div>
     </div>
 
-    <div id="contact-box">
-      <div id='center-elements-bottom'>
-        <div id='width'>
-          <div id="contact-bottom">
-            <p class='contact-bold title'>Contact Anja </p>
+    <div id='blue-box'>
+      <div id='width-blue'>
+        <div id="contact-bottom">
+          <p class='contact-bold title'>Contact Anja </p>
 
-            <p class="contact-normal" id="email">contact@anjalaube.com</p>
+          <p class="contact-normal" id="email">contact@anjalaube.com</p>
 
-            <div class="socialMedia">
-              <a href="https://github.com/AnjaLaube3000">
-                <img class='image-main' src="images/GitHub.svg" alt="Github Icon">
-                <img class='image-main-hover' id="githubIcon-mustard"src="images/GitHub-mustard.svg" alt="Github Icon">
-              </a>
-              <a href="https://www.linkedin.com/in/anja-laube/">
-                <img class='image-main'src="images/LinkedIn.svg" alt="LinkedIn Icon">
-                <img class='image-main-hover' src="images/LinkedIn-mustard.svg"
-                  alt="LinkedIn Icon">
-              </a>
+          <div class="socialMedia">
+            <a href="https://github.com/AnjaLaube3000">
+              <img class='image-main' src="images/GitHub.svg" alt="Github Icon">
+              <img class='image-main-hover' id="githubIcon-mustard"src="images/GitHub-mustard.svg" alt="Github Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/anja-laube/">
+              <img class='image-main'src="images/LinkedIn.svg" alt="LinkedIn Icon">
+              <img class='image-main-hover' src="images/LinkedIn-mustard.svg"
+                alt="LinkedIn Icon">
+            </a>
+          </div>
+        </div>
+        <div id="form" class="contact-normal">
+          <form id="contact-form">
+            <div id="form-display" >
+              <p class='contact-bold title'>Send Anja a message</p>
+              <ul>
+                <li>
+                  <input type="hidden" name="contact_number">
+                </li>
+                <li>
+                  <label class='form-labels' for="name">Name (required)</label>
+                  <input type="text" class="slimInput" id="name" name="user_name" placeholder="What's your name?" required>
+                </li>
+                <li>
+                  <label class='form-labels' for="mail">E-mail (required)</label>
+                  <input type="email" class="slimInput" id="mail" name="user_email" placeholder="Insert your email" required>
+                </li>
+                <li>
+                  <label class='form-labels' for="phoneNumber">Phone Number</label>
+                  <input type="phoneNumber" class="slimInput" id="phoneNumber" name="user_phoneNumber"
+                    placeholder="Insert your phone number">
+                </li>
+                <li>
+                  <label class='form-labels' for="msg">Message (required)</label>
+                  <textarea name="message" placeholder="Write your message" class="slimInput, contact-normal" required></textarea>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div id="form" class="contact-normal">
-            <form id="contact-form">
-              <div id="form-display" >
-                <p class='contact-bold title'>Send Anja a message</p>
-                <ul>
-                  <li>
-                    <input type="hidden" name="contact_number">
-                  </li>
-                  <li>
-                    <label class='form-labels' for="name">Name (required)</label>
-                    <input type="text" class="slimInput" id="name" name="user_name" placeholder="What's your name?" required>
-                  </li>
-                  <li>
-                    <label class='form-labels' for="mail">E-mail (required)</label>
-                    <input type="email" class="slimInput" id="mail" name="user_email" placeholder="Insert your email" required>
-                  </li>
-                  <li>
-                    <label class='form-labels' for="phoneNumber">Phone Number</label>
-                    <input type="phoneNumber" class="slimInput" id="phoneNumber" name="user_phoneNumber"
-                      placeholder="Insert your phone number">
-                  </li>
-                  <li>
-                    <label class='form-labels' for="msg">Message (required)</label>
-                    <textarea name="message" placeholder="Write your message" class="slimInput, contact-normal" required></textarea>
-                  </li>
-                </ul>
-              </div>
-              <div id='positioning'>
-                <!-- Loading Screen -->
-                <div>
-                  <div id='contact-form-loading-screen'>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                  <!-- Loading Screen -->
-
-                  <span id='contact-form-success-screen' class='contact-bold'>
-                    Yeah!
-                    <br>
-                    Form was submitted successfully.
-                  </span>
-                  <span id='contact-form-error-screen' class="contact-bold">
-                    Sorry, an error occured.
-                    <br>
-                    Please refresh the page and try again.
-                  </span>
+            <div id='positioning'>
+              <!-- Loading Screen -->
+              <div>
+                <div id='contact-form-loading-screen'>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
-                <div>
-                  <button id='button' class='contact-bold' type="submit" value="Send">Submit</button>
-                  </div>
-              </div>
-            </form>
+                <!-- Loading Screen -->
 
-          </div>
+                <span id='contact-form-success-screen' class='contact-bold'>
+                  Yeah!
+                  <br>
+                  Form was submitted successfully.
+                </span>
+                <span id='contact-form-error-screen' class="contact-bold">
+                  Sorry, an error occured.
+                  <br>
+                  Please refresh the page and try again.
+                </span>
+              </div>
+              <div>
+                <button id='button' class='contact-bold' type="submit" value="Send">Submit</button>
+                </div>
+            </div>
+          </form>
+
         </div>
       </div>
     </div>
