@@ -315,18 +315,16 @@ body {
   height: 96%;
   margin: 29px 1px 0 -22px;
   background: var(--darkblue);
-  /* filter: contrast(20); */
   opacity: 0.7;
-  filter: blur(4px);
 }
 
 #contact-form-loading-screen .dot {
   position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 50%;
-  left: 50%;
-  /* filter: blur(4px); */
+  width: 20px;
+  height: 20px;
+  top: 33%;
+  left: 33%;
+  filter: blur(4px);
   background: var(--offwhite);
   border-radius: 50%;
   transform: translateX(0);
@@ -335,19 +333,20 @@ body {
 
 #contact-form-loading-screen .dots {
   transform: translateX(0);
-  margin-top: 12px;
   margin-left: 31px;
   animation: dots 2.8s infinite;
-  /* position: relative; */
+  position: absolute;
+  top: 33%;
+  left: 33%;
 }
 
 #contact-form-loading-screen span {
   display: block;
   float: left;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-left: 16px;
-  /* filter: blur(4px); */
+  filter: blur(4px);
   background: var(--offwhite);
   border-radius: 50%;
 }
