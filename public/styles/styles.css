@@ -322,15 +322,16 @@ body {
   height: 36px;
   margin: 8px;
   border: 2px solid #FFFFF8;
-  border-radius: 50%;
   animation: contact-form-loading-screen 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #FFFFF8 transparent transparent transparent;
 }
+
 #contact-form-loading-screen div:nth-child(1) {
   animation-delay: -0.45s;
 }
 #contact-form-loading-screen div:nth-child(2) {
   animation-delay: -0.3s;
+
 }
 #contact-form-loading-screen div:nth-child(3) {
   animation-delay: -0.15s;
