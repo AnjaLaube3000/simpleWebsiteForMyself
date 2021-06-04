@@ -261,10 +261,8 @@ body {
 
 
 #form input, #form textarea {
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-right-width: 1px;
-  border-right-style: solid;
+  border-width: 1px;
+  border-style: solid;
   border-color: var(--offwhite);
   background: none;
   color: var(--formgrey);
@@ -494,6 +492,10 @@ body {
   .about .about-serif {
     font-size: 21px;
     line-height: 31px;
+  }
+
+  #width-blue {
+    width:100%;
   }
 
   #form {
