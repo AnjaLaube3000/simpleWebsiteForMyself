@@ -75,7 +75,6 @@ fallback: Times, Times New Roman, serif */
   font-weight: 700;
   font-size: 37.5px;
   line-height: 50px;
-  color: #280069;
   text-decoration: none;
   text-decoration: underline;
   text-underline-offset: 0.13em;
@@ -86,7 +85,6 @@ fallback: Times, Times New Roman, serif */
   font-weight: 400;
   font-size: 40px;
   line-height: 50px;
-  color: #280069;
 }
 
 /* // MENU BAR */
