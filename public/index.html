@@ -37,33 +37,12 @@
         Don't hesitate to <a href="#contact-box" class="about-bold">contact her</a> or visit her <a href="https://github.com/AnjaLaube3000" class="about-bold">GitHub</a> or <a href="https://www.linkedin.com/in/anja-laube/" class="about-bold">LinkedIn</a> profile.
         </p>
       </div>
+
       <div id="project-section">
         <h2 class="contact-bold">Selected Work</h2>
         <div id="projects">
           <div class="project">
-            <a href="http://rentosaurus-cookiemonster42.herokuapp.com/">
-              <img src="images/SocialReading.png" alt="Image of website SocialReading">
-              <h3 class='contact-normal'>Social Reading Club</h3>
-              <p class='contact-normal'>SocialReading is a book club. The reading groups form around books. Check out which books are read near you.</p>
-              <p class='contact-normal description'>Final project of the LeWagon WebDevelopement Bootcamp</p>
-              <p class="contact-normal description">
-              Built in 2019</p>
-            </a>
-          </div>
-          <div class="project">
-            <a href="http://rentosaurus-cookiemonster42.herokuapp.com/">
-              <img src="images/rentosaurus.png" alt="Image of website Rentosaurs">
-              <h3 class='contact-normal'>Rentosaurs</h3>
-              <p class='contact-normal'>Group project during the LeWagon Web Dev Bootcamp based on the idea of
-                Airbnb.<br>Please sign up to use.</p>
-              <p class='contact-normal description'>Project was part of the LeWagon WebDevelopement Bootcamp
-              </p>
-              <p class="contact-normal description">
-              Built in 2019</p>
-            </a>
-          </div>
-          <div class="project">
-            <a href="https://priceless-kare-755c45.netlify.app"/>
+            <a href="https://priceless-kare-755c45.netlify.app" target="_blank"/>
               <img src="images/kowatsch-konstruktion.svg" alt="Image of website for Kowatsch Konstruktion">
               <h3 class='contact-normal'>Kowatsch Konstruktion</h3>
               <p class='contact-normal'>Digital business card for Georg Kowatsch, who works as 'Technischer Zeichner' and 'Zimmerer Meister'
@@ -71,13 +50,12 @@
               <p class='contact-normal description'>Built in 2021</p>
             </a>
           </div>
-
         </div>
       </div>
     </div>
 
     <div id="contact-box">
-    <div id='center-elements-bottom'>
+      <div id='center-elements-bottom'>
         <div id='width'>
           <div id="contact-bottom">
             <p class='contact-bold title'>Contact Anja </p>
@@ -97,7 +75,7 @@
             </div>
           </div>
           <div id="form" class="contact-normal">
-            <form>
+            <form id="contact-form">
               <div id="form-display" >
                 <p class='contact-bold title'>Send Anja a message</p>
                 <ul>
@@ -127,6 +105,7 @@
                 <button id='button' class='contact-bold' type="submit" value="Send">Submit</button>
               </div>
             </form>
+
             <!-- Loading Screen -->
             <div id='contact-form-loading-screen'>
               <span class="dot"></span>
@@ -136,16 +115,16 @@
                 <span></span>
               </div>
             </div>
-                <!-- Loading Screen -->
-            <!-- <span id='contact-form-loading-screen'>Form will be submitted shortly.</span> -->
-            <span id='contact-form-success-screen'>Yeah! Form was submitted successfully.</span>
-            <span id='contact-form-error-screen'>There was an error. Please try again.</span>
+            <!-- Loading Screen -->
+
+            <span id='contact-form-success-screen' class='active'>Yeah! Form was submitted successfully.</span>
+            <span id='contact-form-error-screen'>There was an error. Please refresh the page and try again. Sorry for the inconvenience! </span>
           </div>
         </div>
       </div>
     </div>
     <div id='footer' class='contact-normal'>
-          <a href="impressum.html">Imprint</a>
+      <a href="impressum.html">Imprint</a>
     </div>
   </div>
   <script src="/scripts/bundle.js"></script>
