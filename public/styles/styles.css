@@ -22,14 +22,19 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: var(--offwhite);
 }
 
 /* //white top part */
-#center-elements {
+#white-box {
+  background: var(--offwhite);
   width: 700px;
   padding-top: 108px;
   padding-bottom: 108px;
+}
+
+#width-white {
+  display: flex;
+  flex-direction: column;
 }
 
 #box-top {
@@ -50,7 +55,8 @@ body {
 }
 
 #contact-top-right a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
   padding-left: 7px;
 }
 
@@ -66,10 +72,18 @@ body {
   color: var(--mustard);
 }
 
+#about {
+  color: var(--darkblue);
+}
+
 .about-serif {
   margin: 0 0;
   padding-top: 50px;
 }
+
+/* .about-serif a:links {
+  color: var(--darkblue);
+} */
 
 .about-serif a:hover {
   color: var(--mustard);
@@ -116,7 +130,6 @@ body {
   color: var(--darkblue);
 }
 
-
 .project h3 {
   text-decoration: underline;
   text-underline-offset: 0.4em;
@@ -131,19 +144,18 @@ body {
   color: var(--darkblue);
 }
 
-
 .description {
   padding-top: 6px;
 }
 
 
 /* //contact section */
-#contact-box {
+#blue-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: var(--darkblue);
-  overflow: hidden;
+  /* overflow: hidden; */
   color: var(--offwhite);
   display: flex;
   flex-direction: row;
@@ -152,11 +164,11 @@ body {
   width: 100%;
 }
 
-#width {
-  width: auto;
+#width-blue {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 700px;
 }
 
 
@@ -177,21 +189,12 @@ body {
   color: var(--mustard);
 }
 
-#socialMedia {
-  padding-top: 50px;
-  color: var(--offwhite);
-}
-
 .socialMedia {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100px;
-}
-
-.socialMedia a {
-  position: relative;
-  padding-top: 36px;
+  padding-top: 50px;
 }
 
 .socialMedia a img.image-main-hover {
@@ -229,7 +232,6 @@ body {
 #form {
   width: 380px;
   padding-left: 169px;
-  position: relative;
 }
 
 #form-display {
@@ -256,30 +258,7 @@ body {
   padding-top: 15px;
 }
 
-#button {
-  border: 1px solid var(--offwhite);
-  background: none;
-  text-align: center;
-  color: var(--offwhite);
-  border-radius: 19px;
-  margin-top: 35px;
-  width: 89px;
-  height: 39px;
-  align-self: end;
-}
 
-#button:hover {
-  background: var(--mustard);
-  border-color: var(--mustard);
-  color: var(--darkblue);
-}
-
-#positioning {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-}
 
 #form input, #form textarea {
   border-top-width: 1px;
@@ -303,6 +282,31 @@ body {
 
 .slimInput {
   height: 39px;
+}
+
+#positioning {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#button {
+  border: 1px solid var(--offwhite);
+  background: none;
+  text-align: center;
+  color: var(--offwhite);
+  border-radius: 19px;
+  margin-top: 35px;
+  width: 89px;
+  height: 39px;
+  align-self: end;
+}
+
+#button:hover {
+  background: var(--mustard);
+  border-color: var(--mustard);
+  color: var(--darkblue);
 }
 
 /* LoadingScreenAnimation */
@@ -389,9 +393,30 @@ body {
   color: var(--mustard);
 }
 
-/* CSS for screen sizes between ipadPortrait and big smartphones*/
-@media only screen and (max-width: 1024px){
-  #center-elements {
+
+/* CSS for screen sizes between 13" notebooks and tablets Portrait*/
+@media only screen and (max-width: 1024px) and (orientation: landscape){
+  #white-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-right: 35px;
+    padding-bottom: 100px;
+    padding-left: 35px;
+  }
+
+  #width-white {
+    width: 700px;
+  }
+
+  #blue-box {
+    width: 100%;
+  }
+
+  #width-blue {
+    display: flex;
+    flex-direction: column;
     width: auto;
     padding-top: 35px;
     padding-right: 35px;
@@ -405,18 +430,6 @@ body {
     align-items: center;
   }
 
-  #width {
-    width: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .socialMedia a {
-    position: relative;
-    padding-top: 0px;
-  }
-
   #form {
     padding-left: 0px;
     padding-top: 79px;
@@ -424,43 +437,36 @@ body {
 }
 
 
-/* CSS for screen sizes smaller than big smartphones*/
+/* CSS for screen sizes smaller than tablets in portrait*/
 @media only screen and (max-width: 768px){
-  #center-elements {
-    max-width: 700px;
-    padding-top: 13.5px;
+  #white-box {
+    width: auto;
+    padding-top: 64px;
     padding-right: 13.5px;
     padding-bottom: 64px;
     padding-left: 13.5px;
+  }
+
+  #width-white {
+    width: auto;
   }
 
   #contact-top-right a{
     text-align: right;
   }
 
-  #box-bottom {
+  #width-blue {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  #width {
     width: auto;
-    display: flex;
-    flex-direction: column;
+    padding-top: 13.5px;
+    padding-right: 13.5px;
+    padding-bottom: 64px;
+    padding-left: 13.5px;
   }
 
   #email {
     padding-bottom: 25px;
-  }
-
-  .socialMedia a {
-    position: relative;
-    padding-top: 0px;
-  }
-
-  .socialMedia a img.image-main-hover {
-    padding-top: 20px;
   }
 
   #form {
@@ -470,8 +476,16 @@ body {
 
 }
 
+/* CSS for screen sizes smaller than tablets in portrait*/
+@media only screen and (max-width: 420px){
+  #contact-top-right a{
+    text-align: right;
+  }
 
-@media only screen and (max-width: 375px){
+  #email {
+    padding-bottom: 25px;
+  }
+
   .about .about-bold {
     font-size: 21px;
     line-height: 31px;
@@ -480,48 +494,6 @@ body {
   .about .about-serif {
     font-size: 21px;
     line-height: 31px;
-  }
-}
-
-
-@media only screen and (max-width: 420px){
-  #center-elements {
-    width: auto;
-    padding-top: 13.5px;
-    padding-right: 13.5px;
-    padding-bottom: 64px;
-    padding-left: 13.5px;
-  }
-
-  #contact-top-right a{
-    text-align: right;
-  }
-
-  /* #center-elements-bottom{
-    width: auto;
-    padding-top: 64px;
-    padding-bottom: 64px;
-  } */
-
-  #box-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-
-  #email {
-    padding-bottom: 25px;
-  }
-
-  .socialMedia a {
-    position: relative;
-    padding-top: 0px;
-  }
-
-  .socialMedia a img.image-main-hover {
-    padding-top: 20px;
   }
 
   #form {
