@@ -274,9 +274,11 @@ body {
   color: var(--darkblue);
 }
 
-#position-button {
+#positioning {
   display: flex;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 #form input, #form textarea {
@@ -366,10 +368,11 @@ body {
 #contact-form-success-screen {
   display: none;
 }
+
 #contact-form-success-screen.active {
   display: block;
+  color: var(--mustard);
 }
-
 
 #contact-form-error-screen {
   display: none;
