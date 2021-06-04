@@ -274,8 +274,9 @@ body {
   color: var(--darkblue);
 }
 
-.disabled {
- color: yellow;
+#position-button {
+  display: flex;
+  justify-content: end;
 }
 
 #form input, #form textarea {
