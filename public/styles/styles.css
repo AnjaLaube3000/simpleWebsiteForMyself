@@ -193,20 +193,22 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100px;
-  padding-top: 50px;
+  width: 150px;
+  margin-top: 20px;
+  height: 35px;
+}
+
+#LIIcon-hover {
+  position: relative;
+  left: -36px;
 }
 
 .socialMedia a img.image-main-hover {
-  position: absolute;
-  top: -20px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  object-fit: contain;
+  position: relative;
+  top: 0;
   opacity: 0;
-  width: 32px;
-  padding-top: 56px;
+  left: -38px;
+
 }
 
 .socialMedia a:hover img.image-main-hover{
@@ -215,13 +217,6 @@ body {
 
 .socialMedia a:hover img.image-main{
   opacity: 0;
-}
-
-#github {
-  padding-top: 66px;
-}
-#githubIcon-mustard {
-  width: 34px;
 }
 
 .title {
@@ -258,8 +253,6 @@ body {
   padding-top: 15px;
 }
 
-
-
 #form input, #form textarea {
   border-width: 1px;
   border-style: solid;
@@ -276,6 +269,14 @@ body {
   padding-top: 9px;
   height: 155px;
   font-size: 17px;
+}
+
+#form input:focus {
+  border-color: var(--mustard);
+}
+
+#form textarea:focus {
+  border-color: var(--mustard);
 }
 
 .slimInput {
@@ -430,7 +431,7 @@ body {
 
   #form {
     padding-left: 0px;
-    padding-top: 79px;
+    padding-top: 100px;
   }
 }
 
@@ -476,6 +477,10 @@ body {
 
 /* CSS for screen sizes smaller than tablets in portrait*/
 @media only screen and (max-width: 420px){
+  #box-top {
+    flex-direction: column;
+  }
+
   #contact-top-right a{
     text-align: right;
   }
