@@ -155,7 +155,6 @@ body {
   flex-direction: row;
   justify-content: center;
   background: var(--darkblue);
-  /* overflow: hidden; */
   color: var(--offwhite);
   display: flex;
   flex-direction: row;
@@ -172,7 +171,7 @@ body {
 }
 
 
-#contact-bottom {
+#contact-box {
   display: flex;
   flex-direction: column;
 }
