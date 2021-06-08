@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0 0 0 0;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
@@ -60,16 +61,37 @@ body {
   padding-left: 7px;
 }
 
-#contact-top-right a:visited {
+#contact-top-right a:hover {
+  color: var(--mustard);
+}
+
+#wording {
+  color: var(--darkblue);
+}
+
+#wording:visited {
   color: var(--darkblue);
 }
 
 #arrow {
-  padding-top: 2px;
+  position: relative;
+  top: 4px;
+  left: 5px;
 }
 
-#contact-top-right a:hover {
-  color: var(--mustard);
+#contact-top-right a img#arrow-hover {
+  position: relative;
+  top: 3px;
+  left: -13px;
+  opacity: 0;
+}
+
+#contact-top-right a:hover img#arrow-hover {
+  opacity: 1;
+}
+
+#contact-top-right a:hover img#arrow {
+  opacity: 0;
 }
 
 #about {
@@ -81,18 +103,13 @@ body {
   padding-top: 50px;
 }
 
-/* .about-serif a:links {
+.about-link {
   color: var(--darkblue);
-} */
+}
 
-.about-serif a:hover {
+.about-link:hover {
   color: var(--mustard);
 }
-
-.about-serif a:visited {
-  color: var(--darkblue);
-}
-
 
 /* //projects section*/
 #project-section {
@@ -155,7 +172,6 @@ body {
   flex-direction: row;
   justify-content: center;
   background: var(--darkblue);
-  /* overflow: hidden; */
   color: var(--offwhite);
   display: flex;
   flex-direction: row;
@@ -172,7 +188,7 @@ body {
 }
 
 
-#contact-bottom {
+#contact-box {
   display: flex;
   flex-direction: column;
 }
@@ -183,30 +199,31 @@ body {
   padding-bottom: 30px;
   text-decoration: underline;
   text-underline-offset: 0.4em;
+  color: var(--offwhite);
 }
 
 #email:hover {
   color: var(--mustard);
 }
 
+#email:visited {
+  color: var(--offwhite);
+}
+
 .socialMedia {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100px;
-  padding-top: 50px;
+  width: 150px;
+  margin-top: 20px;
+  height: 35px;
 }
 
 .socialMedia a img.image-main-hover {
-  position: absolute;
-  top: -20px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  object-fit: contain;
+  position: relative;
+  top: 0;
   opacity: 0;
-  width: 32px;
-  padding-top: 56px;
+  left: -38px;
 }
 
 .socialMedia a:hover img.image-main-hover{
@@ -217,11 +234,9 @@ body {
   opacity: 0;
 }
 
-#github {
-  padding-top: 66px;
-}
-#githubIcon-mustard {
-  width: 34px;
+#LIIcon-hover {
+  position: relative;
+  left: -36px;
 }
 
 .title {
@@ -258,13 +273,9 @@ body {
   padding-top: 15px;
 }
 
-
-
 #form input, #form textarea {
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-right-width: 1px;
-  border-right-style: solid;
+  border-width: 1px;
+  border-style: solid;
   border-color: var(--offwhite);
   background: none;
   color: var(--formgrey);
@@ -278,6 +289,14 @@ body {
   padding-top: 9px;
   height: 155px;
   font-size: 17px;
+}
+
+#form input:focus {
+  border-color: var(--mustard);
+}
+
+#form textarea:focus {
+  border-color: var(--mustard);
 }
 
 .slimInput {
@@ -326,6 +345,7 @@ body {
   height: 36px;
   margin: 8px;
   border: 2px solid #FFFFF8;
+  border-radius: 50%;
   animation: contact-form-loading-screen 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #FFFFF8 transparent transparent transparent;
 }
@@ -432,7 +452,7 @@ body {
 
   #form {
     padding-left: 0px;
-    padding-top: 79px;
+    padding-top: 100px;
   }
 }
 
@@ -478,6 +498,10 @@ body {
 
 /* CSS for screen sizes smaller than tablets in portrait*/
 @media only screen and (max-width: 420px){
+  #box-top {
+    flex-direction: column;
+  }
+
   #contact-top-right a{
     text-align: right;
   }
@@ -494,6 +518,10 @@ body {
   .about .about-serif {
     font-size: 21px;
     line-height: 31px;
+  }
+
+  #width-blue {
+    width:100%;
   }
 
   #form {
