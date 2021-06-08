@@ -64,12 +64,9 @@ body {
 #contact-top-right a:hover {
   color: var(--mustard);
 }
+
 #wording {
   color: var(--darkblue);
-}
-
-#wording:hover {
-  color: var(--mustard);
 }
 
 #wording:visited {

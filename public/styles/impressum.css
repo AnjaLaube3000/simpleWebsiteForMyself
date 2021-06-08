@@ -43,25 +43,36 @@ body {
   text-decoration: none;
 }
 
-#wording {
+
+#link-top-right {
   text-decoration: underline;
   text-underline-offset: 0.4em;
-  padding-top: 5px;
   color: var(--darkblue);
+}
+
+#link-top-right a:hover {
+  color: var(--mustard);
 }
 
 #arrow{
   position: relative;
   top: 3px;
-  right: 5px;
+  right: -4px;
 }
 
-#wording:hover {
-  color: var(--mustard);
+#link-top-right a:hover img#arrow {
+  opacity: 0;
 }
 
-#wording:visited {
-  color: var(--darkblue);
+#link-top-right a img#arrow-hover {
+  position: relative;
+  top: 3px;
+  left: -13px;
+  opacity: 0;
+}
+
+#link-top-right a:hover img#arrow-hover {
+  opacity: 1;
 }
 
 .paragraphs {
