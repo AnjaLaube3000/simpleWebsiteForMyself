@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0 0 0 0;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
@@ -60,16 +61,40 @@ body {
   padding-left: 7px;
 }
 
+#contact-top-right a:hover {
+  color: var(--mustard);
+}
+#wording {
+  color: var(--darkblue);
+}
+
+#wording:hover {
+  color: var(--mustard);
+}
+
 #wording:visited {
   color: var(--darkblue);
 }
 
 #arrow {
-  padding-top: 2px;
+  position: relative;
+  top: 4px;
+  left: 5px;
 }
 
-#contact-top-right a:hover {
-  color: var(--mustard);
+#contact-top-right a img#arrow-hover {
+  position: relative;
+  top: 3px;
+  left: -13px;
+  opacity: 0;
+}
+
+#contact-top-right a:hover img#arrow-hover {
+  opacity: 1;
+}
+
+#contact-top-right a:hover img#arrow {
+  opacity: 0;
 }
 
 #about {
@@ -81,18 +106,13 @@ body {
   padding-top: 50px;
 }
 
-/* .about-serif a:links {
+.about-link {
   color: var(--darkblue);
-} */
+}
 
-.about-serif a:hover {
+.about-link:hover {
   color: var(--mustard);
 }
-
-.about-serif a:visited {
-  color: var(--darkblue);
-}
-
 
 /* //projects section*/
 #project-section {
@@ -182,10 +202,15 @@ body {
   padding-bottom: 30px;
   text-decoration: underline;
   text-underline-offset: 0.4em;
+  color: var(--offwhite);
 }
 
 #email:hover {
   color: var(--mustard);
+}
+
+#email:visited {
+  color: var(--offwhite);
 }
 
 .socialMedia {
@@ -197,17 +222,11 @@ body {
   height: 35px;
 }
 
-#LIIcon-hover {
-  position: relative;
-  left: -36px;
-}
-
 .socialMedia a img.image-main-hover {
   position: relative;
   top: 0;
   opacity: 0;
   left: -38px;
-
 }
 
 .socialMedia a:hover img.image-main-hover{
@@ -216,6 +235,11 @@ body {
 
 .socialMedia a:hover img.image-main{
   opacity: 0;
+}
+
+#LIIcon-hover {
+  position: relative;
+  left: -36px;
 }
 
 .title {
@@ -324,6 +348,7 @@ body {
   height: 36px;
   margin: 8px;
   border: 2px solid #FFFFF8;
+  border-radius: 50%;
   animation: contact-form-loading-screen 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #FFFFF8 transparent transparent transparent;
 }
