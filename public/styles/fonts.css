@@ -18,12 +18,6 @@
   url("/fonts/PTSerif-Regular.woff") format("woff");
 }
 
-
-
-
-/*
-fallback: Times, Times New Roman, serif */
-
 /* CONTACT */
 .contact-normal {
   font-family: "PTSans-Regular", sans-serif;
@@ -64,7 +58,13 @@ fallback: Times, Times New Roman, serif */
   font-weight: 700;
   font-size: 37.5px;
   line-height: 50px;
-  text-decoration: none;
+}
+
+.about-underlined {
+  font-family: "PTSans-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 37.5px;
+  line-height: 20px;
   text-decoration: underline;
   text-underline-offset: 0.13em;
 }

@@ -17,12 +17,10 @@ window.onload = () => {
     errorScreen.classList.remove('active');
     if(isLoading) {
       loadingScreen.classList.add('active')
-      console.log('loading')
     } else if( hasError ) {
       errorScreen.classList.add('active');
     } else {
       successScreen.classList.add('active');
-      console.log('success')
     }
   }
    contactForm.addEventListener('submit', function (event) {

@@ -48,6 +48,8 @@ body {
   text-decoration: underline;
   text-underline-offset: 0.4em;
   color: var(--darkblue);
+  position: relative;
+  top: 8px;
 }
 
 #link-top-right a:hover {
